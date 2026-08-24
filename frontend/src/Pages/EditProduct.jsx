@@ -37,7 +37,7 @@ function EditProduct() {
 
             const res = await axios.get(
 
-                `http://localhost:5000/api/products/${id}`
+                `https://smart-warehouse-production-c6c8.up.railway.app/api/products/${id}`
 
             );
 
@@ -103,7 +103,7 @@ function EditProduct() {
 
             await axios.put(
 
-                `http://localhost:5000/api/products/${id}`,
+                `https://smart-warehouse-production-c6c8.up.railway.app/api/products/${id}`,
 
                 product
 

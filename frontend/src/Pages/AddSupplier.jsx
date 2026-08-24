@@ -46,7 +46,7 @@ function AddSupplier() {
         try {
 
             await axios.post(
-                "http://localhost:5000/api/suppliers",
+                "https://smart-warehouse-production-c6c8.up.railway.app/api/suppliers",
                 supplier
             );
 

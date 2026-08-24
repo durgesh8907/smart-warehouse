@@ -23,7 +23,7 @@ try{
 
 
 const res=await axios.get(
-"http://localhost:5000/api/users"
+"https://smart-warehouse-production-c6c8.up.railway.app/api/users"
 );
 
 

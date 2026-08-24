@@ -17,7 +17,7 @@ function Products() {
 
   const getProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/products");
+      const res = await axios.get("https://smart-warehouse-production-c6c8.up.railway.app/api/products");
       setProducts(Array.isArray(res.data) ? res.data : []);
     } catch (error) {
       toast.error(error.response?.data?.message || "Unable to load products");
@@ -40,7 +40,7 @@ function Products() {
   const confirmDelete = async () => {
     if (!deleteId) return;
     try {
-      await axios.delete(`http://localhost:5000/api/products/${deleteId}`);
+      await axios.delete(`https://smart-warehouse-production-c6c8.up.railway.app/api/products/${deleteId}`);
       toast.success("Product deleted successfully");
       setDeleteId(null);
       getProducts();

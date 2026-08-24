@@ -76,7 +76,7 @@ function Register() {
             setLoading(true);
 
             const res = await axios.post(
-                "http://localhost:5000/api/auth/register",
+                "https://smart-warehouse-production-c6c8.up.railway.app/api/auth/register",
                 user
             );
 

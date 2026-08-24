@@ -83,7 +83,7 @@ function AddProduct() {
 
             const res = await axios.post(
 
-                "http://localhost:5000/api/products",
+                "https://smart-warehouse-production-c6c8.up.railway.app/api/products",
 
                 product
 

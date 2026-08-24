@@ -25,7 +25,7 @@ function EditSupplier() {
     // Load Supplier
     useEffect(() => {
 
-        axios.get(`http://localhost:5000/api/suppliers/${id}`)
+        axios.get(`https://smart-warehouse-production-c6c8.up.railway.app/api/suppliers/${id}`)
         .then((res) => {
 
             setSupplier(res.data);
@@ -61,7 +61,7 @@ function EditSupplier() {
 
             await axios.put(
 
-                `http://localhost:5000/api/suppliers/${id}`,
+                `https://smart-warehouse-production-c6c8.up.railway.app/api/suppliers/${id}`,
 
                 supplier
 

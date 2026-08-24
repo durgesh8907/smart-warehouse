@@ -23,7 +23,7 @@ function Suppliers() {
 
 
             const response = await axios.get(
-                "http://localhost:5000/api/suppliers"
+                "https://smart-warehouse-production-c6c8.up.railway.app/api/suppliers"
             );
 
 
