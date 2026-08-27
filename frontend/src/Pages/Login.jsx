@@ -32,7 +32,7 @@ function Login() {
         try {
 
             const res = await axios.post(
-                https://smart-warehouse-production-790b.up.railway.app/api/auth/login,
+                "https://smart-warehouse-hqwq.onrender.com/api/auth/login",
                 user
             );
 
