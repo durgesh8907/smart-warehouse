@@ -76,7 +76,7 @@ function Register() {
             setLoading(true);
 
             const res = await axios.post(
-                 "https://smart-warehouse-hqwq.onrender.com/api/auth/register",
+                     "https://smart-warehouse-hqwg.onrender.com/api/auth/register",
                 user
             );
 
