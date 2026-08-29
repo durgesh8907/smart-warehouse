@@ -17,7 +17,7 @@ function Products() {
 
   const getProducts = async () => {
     try {
-      const res = await axios.get("https://smart-warehouse-production-c6c8.up.railway.app/api/products");
+      const res = await axios.get("https://smart-warehouse-hqwg.onrender.com/api/products"));
       setProducts(Array.isArray(res.data) ? res.data : []);
     } catch (error) {
       toast.error(error.response?.data?.message || "Unable to load products");
