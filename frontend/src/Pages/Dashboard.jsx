@@ -15,7 +15,7 @@ function Dashboard() {
 
   const getDashboardData = async () => {
     try {
-      const res = await axios.get("https://smart-warehouse-production-c6c8.up.railway.app/api/dashboard/stats");
+      const res = await axios.get("https://smart-warehouse-hqwg.onrender.com/api/dashboard");
       setStats(res.data || {});
     } catch (error) {
       console.log("Dashboard Error:", error);
