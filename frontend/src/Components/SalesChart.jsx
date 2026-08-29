@@ -21,7 +21,7 @@ function SalesChart() {
         try {
 
             const res = await axios.get(
-                "https://smart-warehouse-production-c6c8.up.railway.app/api/charts/sales"
+               "https://smart-warehouse-hqwg.onrender.com/api/charts/sales"
             );
 
             setSalesData(res.data);
