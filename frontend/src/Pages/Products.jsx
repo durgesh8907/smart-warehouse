@@ -17,9 +17,9 @@ function Products() {
 
   const getProducts = async () => {
   try {
-    const res = await axios.get(
-      "https://smart-warehouse-hqwg.onrender.com/api/products"
-    );
+   const res = await axios.get(
+  "https://smart-warehouse-hqwg.onrender.com/api/products"
+);
 
     setProducts(Array.isArray(res.data) ? res.data : []);
   } catch (error) {
@@ -47,7 +47,9 @@ function Products() {
   const confirmDelete = async () => {
     if (!deleteId) return;
     try {
-      await axios.delete(`https://smart-warehouse-hqwg.onrender.com/api/products/${deleteId}`);
+     await axios.delete(
+  `https://smart-warehouse-hqwg.onrender.com/api/products/${deleteId}`
+);
       toast.success("Product deleted successfully");
       setDeleteId(null);
       getProducts();
