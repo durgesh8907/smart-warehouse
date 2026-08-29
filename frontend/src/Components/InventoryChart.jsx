@@ -23,7 +23,7 @@ function InventoryChart() {
             try {
 
                 const res = await axios.get(
-                    "https://smart-warehouse-production-c6c8.up.railway.app/api/charts/inventory"
+                   "https://smart-warehouse-hqwg.onrender.com/api/charts/inventory"
                 );
 
                 setInventoryData(res.data);
